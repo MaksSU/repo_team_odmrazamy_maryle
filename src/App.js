@@ -7,6 +7,9 @@ function App() {
       <div>
         Maksymilian Dygasiewicz 'MakSU'
       </div>
+      <div>
+        Makowski Bartosz 'Apocryphen'
+      </div>
     </div>
   );
 }

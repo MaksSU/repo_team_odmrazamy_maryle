@@ -2,6 +2,7 @@
 import './App.css';
 const name_max = "Maksymilian Dygasiewicz 'MakSU'"
 const name_Apoc = "Makowski Bartosz 'Apocryphen'"
+const name_Babka = "Natalia Szwedo 'Baka'"
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         {name_Apoc}
       </div>
       <div>
-        Natalia Szwedo 'Baka'
+        {name_Babka}
       </div>
       
     </div>

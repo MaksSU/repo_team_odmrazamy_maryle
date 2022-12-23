@@ -10,6 +10,10 @@ function App() {
       <div>
         Makowski Bartosz 'Apocryphen'
       </div>
+      <div>
+        Natalia Szwedo 'Baka'
+      </div>
+      
     </div>
   );
 }

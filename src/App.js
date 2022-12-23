@@ -7,12 +7,6 @@ function App() {
     <div className="App">
       <div>
         {name_list.map((item) => <div>{item}</div>)}
-      </div>git
-      <div>
-        Makowski Bartosz 'Apocryphen'
-      </div>
-      <div>
-        Natalia Szwedo 'Baka'
       </div>
       
     </div>

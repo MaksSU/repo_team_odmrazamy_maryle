@@ -9,7 +9,8 @@ const name_list = [
 
 const updateNameBartus = (name) => {
   // console.log(name);
-  return name + " 1";
+  const changeToUpper = name.toLocaleUpperCase();
+  return changeToUpper;
 };
 
 const updateNameMax = (name) => {

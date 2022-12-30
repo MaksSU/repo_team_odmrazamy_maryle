@@ -12,6 +12,11 @@ const updateNameBartus = (name) => {
   return name + " 1";
 };
 
+const updateNameMax = (name) => {
+  // console.log(name);
+  return name + " coś innego";
+};
+
 function App() {
   return (
     <div className="App">
@@ -23,7 +28,7 @@ function App() {
 
       <div>
         {name_list.map((item) => (
-          <div>{item}</div>
+          <div>{updateNameMax(item)}</div>
         ))}
       </div>
     </div>

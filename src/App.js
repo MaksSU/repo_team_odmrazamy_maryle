@@ -15,7 +15,7 @@ const updateNameBartus = (name) => {
 
 const updateNameMax = (name) => {
   // console.log(name);
-  return name + " coś innego";
+  return name + " ma " + name.length + " znaków";
 };
 
 function App() {

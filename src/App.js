@@ -18,6 +18,12 @@ const updateNameMax = (name) => {
   return name + " ma " + name.length + " znaków";
 };
 
+const updateNameApocryphen = (name) => {
+  //console.log(name);
+  const changeToLower = name.toLocaleLowerCase();
+  return changeToLower;
+}
+
 function App() {
   return (
     <div className="App">
@@ -30,6 +36,12 @@ function App() {
       <div>
         {name_list.map((item) => (
           <div>{updateNameMax(item)}</div>
+        ))}
+      </div>
+
+      <div>
+        {name_list.map((item) => (
+          <div>{updateNameApocryphen(item)}</div>
         ))}
       </div>
     </div>

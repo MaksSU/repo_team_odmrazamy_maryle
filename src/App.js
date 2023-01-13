@@ -23,14 +23,19 @@ const name_list = [
   // "Natalia Szwedo 'Baka'",
 ];
 
-console.log(name_list[1].name);
+// console.log(name_list[1].name);
 console.log(name_list[2].name);
 
-const updateNameBartus = ({ name }) => {
-  console.log(name);
-  const changeToUpper = name.toLocaleUpperCase();
-  return changeToUpper;
-};
+// const updateNameBartus = ({ name }) => {
+//   console.log(name);
+//   const changeToUpper = name.toLocaleUpperCase();
+//   return changeToUpper;
+// };
+
+//Tworze tutaj funkcje która tworzy komponenty, w propsach używam {name} co ma odnosić się do danej wartości name w naszym obiekcie w liście name_list.
+function NameComponentBartus({ name }) {
+  return <h1>{name}</h1>;
+}
 
 const updateNameMax = (name) => {
   // console.log(name);
@@ -46,10 +51,15 @@ const updateNameMax = (name) => {
 function App() {
   return (
     <div className="App">
-      <div>
+      {/* <div>
         {name_list.map((item) => (
           <div>{updateNameBartus(item)}</div>
         ))}
+      </div> */}
+
+      {/* Tutaj ją wywołuje: nazwaFunkcji toCoPrzesyłamDoFunkcji={naszaLista[element].toCoChcemyWydobyć } */}
+      <div>
+        <NameComponentBartus name={name_list[1].name} />
       </div>
 
       <div>

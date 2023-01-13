@@ -4,18 +4,24 @@ const name_list = [
   {
     name: "Paweł",
     goal: "Swtworzenia aplikacji do nauki jezyków i zdolności gognitywnych",
-    badges: []
-
+    badges: [],
   },
-  "Maksymilian Dygasiewicz 'MakSU'",
-  "Makowski Bartosz 'Apocryphen'",
-  "Natalia Szwedo 'Baka'",
-  "Bartosz Godek 'bartus'",
+
+  // "Maksymilian Dygasiewicz 'MakSU'",
+  // "Makowski Bartosz 'Apocryphen'",
+  // "Natalia Szwedo 'Baka'",
+
+  {
+    name: "Bartuś",
+    goal: "Tak",
+    badges: [],
+  },
 ];
 
+console.log(name_list[1].name);
 
-const updateNameBartus = (name) => {
-  // console.log(name);
+const updateNameBartus = ({ name }) => {
+  console.log(name);
   const changeToUpper = name.toLocaleUpperCase();
   return changeToUpper;
 };
@@ -29,7 +35,7 @@ const updateNameApocryphen = (name) => {
   //console.log(name);
   const changeToLower = name.toLocaleLowerCase();
   return changeToLower;
-}
+};
 
 function App() {
   return (
@@ -40,7 +46,7 @@ function App() {
         ))}
       </div>
 
-      <div>
+      {/* <div>
         {name_list.map((item) => (
           <div>{updateNameMax(item)}</div>
         ))}
@@ -50,7 +56,7 @@ function App() {
         {name_list.map((item) => (
           <div>{updateNameApocryphen(item)}</div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

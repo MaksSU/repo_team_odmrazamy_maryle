@@ -16,9 +16,18 @@ const name_list = [
     goal: "Tak",
     badges: [],
   },
+
+  {
+    name: "Max",
+    goal: "",
+    badges: [],
+  }
+
 ];
 
 console.log(name_list[1].name);
+
+console.log(name_list[2].name);
 
 const updateNameBartus = ({ name }) => {
   console.log(name);
@@ -46,17 +55,17 @@ function App() {
         ))}
       </div>
 
-      {/* <div>
+       <div>
         {name_list.map((item) => (
-          <div>{updateNameMax(item)}</div>
+          <div>{updateNameMax(item.name)}</div>
         ))}
       </div>
-
+{/*
       <div>
         {name_list.map((item) => (
           <div>{updateNameApocryphen(item)}</div>
         ))}
-      </div> */}
+        </div> */}
     </div>
   );
 }

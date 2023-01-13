@@ -1,11 +1,18 @@
 // import logo from './logo.svg';
 import "./App.css";
 const name_list = [
+  {
+    name: "Paweł",
+    goal: "Swtworzenia aplikacji do nauki jezyków i zdolności gognitywnych",
+    badges: []
+
+  },
   "Maksymilian Dygasiewicz 'MakSU'",
   "Makowski Bartosz 'Apocryphen'",
   "Natalia Szwedo 'Baka'",
   "Bartosz Godek 'bartus'",
 ];
+
 
 const updateNameBartus = (name) => {
   // console.log(name);

@@ -3,13 +3,9 @@ import "./App.css";
 const name_list = [
   {
     name: "Paweł",
-    goal: "Swtworzenia aplikacji do nauki jezyków i zdolności gognitywnych",
+    goal: "Swtworzenia aplikacji do nauki jezyków i zdolności kognitywnych",
     badges: [],
   },
-
-  // "Maksymilian Dygasiewicz 'MakSU'",
-  // "Makowski Bartosz 'Apocryphen'",
-  // "Natalia Szwedo 'Baka'",
 
   {
     name: "Bartuś",
@@ -21,12 +17,13 @@ const name_list = [
     name: "Max",
     goal: "",
     badges: [],
-  }
+  },
 
+  // "Makowski Bartosz 'Apocryphen'",
+  // "Natalia Szwedo 'Baka'",
 ];
 
 console.log(name_list[1].name);
-
 console.log(name_list[2].name);
 
 const updateNameBartus = ({ name }) => {
@@ -40,11 +37,11 @@ const updateNameMax = (name) => {
   return name + " ma " + name.length + " znaków";
 };
 
-const updateNameApocryphen = (name) => {
-  //console.log(name);
-  const changeToLower = name.toLocaleLowerCase();
-  return changeToLower;
-};
+// const updateNameApocryphen = (name) => {
+//   //console.log(name);
+//   const changeToLower = name.toLocaleLowerCase();
+//   return changeToLower;
+//};
 
 function App() {
   return (
@@ -55,13 +52,13 @@ function App() {
         ))}
       </div>
 
-       <div>
+      <div>
         {name_list.map((item) => (
           <div>{updateNameMax(item.name)}</div>
         ))}
       </div>
-{/*
-      <div>
+
+      {/* <div>
         {name_list.map((item) => (
           <div>{updateNameApocryphen(item)}</div>
         ))}

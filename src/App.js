@@ -13,7 +13,7 @@ const name_list = [
 
   {
     name: "Bartuś",
-    goal: "Tak",
+    goal: "Czerpać frajde i satysfakcje z procesu nauki Reacta, yo",
     badges: [],
   },
 ];

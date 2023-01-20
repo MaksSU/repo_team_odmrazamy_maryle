@@ -2,6 +2,7 @@
 import { Name } from "./components/Name";
 
 import "./App.css";
+import { Badges } from "./components/Badges";
 const name_list = [
   {
     name: "Paweł",
@@ -18,6 +19,12 @@ const name_list = [
   {
     name: "Max",
     goal: "",
+    badges: [],
+  },
+
+  {
+    name: "Bartek",
+    goal: "DO something",
     badges: [],
   },
 
@@ -47,6 +54,7 @@ const updateNameMax = (name) => {
 
 function App() {
   return (
+    <>
     <div className="App">
       {/* <div>
         {name_list.map((item) => (
@@ -64,13 +72,18 @@ function App() {
         ))}
       </div>
 
-      {/* <div>
+      <div>
         {name_list.map((item) => (
           <div>{updateNameApocryphen(item)}</div>
         ))}
-        </div> */}
+        </div>
     </div>
-  );
+    <div>
+      <Badges badges={name_list[3].badges}/>
+    </div>
+  
+  </>);
+  
 }
 
 export default App;

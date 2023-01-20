@@ -1,8 +1,9 @@
 // import logo from './logo.svg';
-import { Name } from "./components/Name";
-
 import "./App.css";
 import { Badges } from "./components/Badges";
+import { Name } from "./components/Name";
+import { Profile } from "./components/Profile";
+
 const name_list = [
   {
     name: "Paweł",
@@ -25,10 +26,9 @@ const name_list = [
   {
     name: "Bartek",
     goal: "DO something",
-    badges: ["setapowiec","zmiennik"],
+    badges: ["setapowiec", "zmiennik"],
   },
 
-  // "Makowski Bartosz 'Apocryphen'",
   // "Natalia Szwedo 'Baka'",
 ];
 
@@ -55,36 +55,34 @@ const updateNameApocryphen = (name) => {
 function App() {
   return (
     <>
-    <div className="App">
-      {/* <div>
-        {name_list.map((item) => (
-          <div>{updateNameBartus(item)}</div>
-        ))}
-      </div> */}
-
-      <div>
-        <Name name={name_list[1].name} />
-      </div>
-
-      <div>
-        {name_list.map((item) => (
-          <div>{updateNameMax(item.name)}</div>
-        ))}
-      </div>
-
-      <div>
-        {name_list.map((item) => (
-          <div>{updateNameApocryphen(item.name)}</div>
-        ))}
+      <div className="App">
+        <div>
+          {name_list.map((item) => (
+            <Profile user={item} />
+          ))}
         </div>
-    </div>
-    <div>
-      <Badges badges={name_list[3].badges}/>
 
-    </div>
-  
-  </>);
-  
+        <div>
+          <Name name={name_list[1].name} />
+        </div>
+
+        <div>
+          {name_list.map((item) => (
+            <div>{updateNameMax(item.name)}</div>
+          ))}
+        </div>
+
+        <div>
+          {name_list.map((item) => (
+            <div>{updateNameApocryphen(item.name)}</div>
+          ))}
+        </div>
+      </div>
+      <div>
+        <Badges badges={name_list[3].badges} />
+      </div>
+    </>
+  );
 }
 
 export default App;

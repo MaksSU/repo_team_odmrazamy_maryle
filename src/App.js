@@ -25,7 +25,7 @@ const name_list = [
   {
     name: "Bartek",
     goal: "DO something",
-    badges: [],
+    badges: ["setapowiec","zmiennik"],
   },
 
   // "Makowski Bartosz 'Apocryphen'",
@@ -46,11 +46,11 @@ const updateNameMax = (name) => {
   return name + " ma " + name.length + " znaków";
 };
 
-// const updateNameApocryphen = (name) => {
-//   //console.log(name);
-//   const changeToLower = name.toLocaleLowerCase();
-//   return changeToLower;
-//};
+const updateNameApocryphen = (name) => {
+  //console.log(name);
+  const changeToLower = name.toLocaleLowerCase();
+  return changeToLower;
+};
 
 function App() {
   return (
@@ -74,12 +74,13 @@ function App() {
 
       <div>
         {name_list.map((item) => (
-          <div>{updateNameApocryphen(item)}</div>
+          <div>{updateNameApocryphen(item.name)}</div>
         ))}
         </div>
     </div>
     <div>
       <Badges badges={name_list[3].badges}/>
+
     </div>
   
   </>);

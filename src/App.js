@@ -1,4 +1,6 @@
 // import logo from './logo.svg';
+import { Name } from "./components/Name";
+
 import "./App.css";
 const name_list = [
   {
@@ -32,11 +34,6 @@ console.log(name_list[2].name);
 //   return changeToUpper;
 // };
 
-//Tworze tutaj funkcje która tworzy komponenty, w propsach używam {name} co ma odnosić się do danej wartości name w naszym obiekcie w liście name_list.
-function NameComponentBartus({ name }) {
-  return <h1>{name}</h1>;
-}
-
 const updateNameMax = (name) => {
   // console.log(name);
   return name + " ma " + name.length + " znaków";
@@ -57,9 +54,8 @@ function App() {
         ))}
       </div> */}
 
-      {/* Tutaj ją wywołuje: nazwaFunkcji toCoPrzesyłamDoFunkcji={naszaLista[element].toCoChcemyWydobyć } */}
       <div>
-        <NameComponentBartus name={name_list[1].name} />
+        <Name name={name_list[1].name} />
       </div>
 
       <div>

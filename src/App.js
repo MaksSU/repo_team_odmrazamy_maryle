@@ -2,6 +2,7 @@
 import "./App.css";
 import { Badges } from "./components/Badges";
 import { Name } from "./components/Name";
+import { Goal } from "./components/Goal";
 import { Profile } from "./components/Profile";
 
 const name_list = [
@@ -29,7 +30,11 @@ const name_list = [
     badges: ["setapowiec", "zmiennik"],
   },
 
-  // "Natalia Szwedo 'Baka'",
+   {
+    name: "Natalia",
+    goal: "Nauczyć się czegoś nowego UwU",
+    badges: [],
+  }
 ];
 
 // console.log(name_list[1].name);
@@ -52,6 +57,11 @@ const updateNameApocryphen = (name) => {
   return changeToLower;
 };
 
+const updateNameBabka = (name) => {
+  // console.log(name);
+  return name.slice(0,3);
+};
+
 function App() {
   return (
     <>
@@ -71,10 +81,18 @@ function App() {
             <div>{updateNameMax(item.name)}</div>
           ))}
         </div>
+        <div>
+        <Goal goal={name_list[3].goal} />
+      </div>
 
         <div>
           {name_list.map((item) => (
             <div>{updateNameApocryphen(item.name)}</div>
+          ))}
+        </div>
+        <div>
+          {name_list.map((item) => (
+            <div>{updateNameBabka(item.name)}</div>
           ))}
         </div>
       </div>

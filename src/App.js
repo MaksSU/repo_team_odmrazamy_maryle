@@ -7,6 +7,14 @@ import { Profile } from "./components/molecules/Profile";
 import { NameLength } from "./components/atoms/NameLength";
 import { users } from "./data/users";
 
+/* Plan działania
+  - div na profil (jakiś prostokąt, ładnie ostylizować)
+  - środek profilu ostylować
+  - pobawić sie backgroundem
+  - wyśrodkować profile
+  - mechanika ruchu prawo/lewo
+*/
+
 function App() {
   return (
     <>

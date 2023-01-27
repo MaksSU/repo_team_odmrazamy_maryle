@@ -4,6 +4,7 @@ import { Badges } from "./components/Badges";
 import { Name } from "./components/Name";
 import { Goal } from "./components/Goal";
 import { Profile } from "./components/Profile";
+import { NameLength } from "./components/NameLength";
 
 const name_list = [
   {
@@ -20,8 +21,8 @@ const name_list = [
 
   {
     name: "Max",
-    goal: "",
-    badges: [],
+    goal: "Nauka Reacta",
+    badges: ["tablica"],
   },
 
   {
@@ -46,10 +47,6 @@ console.log(name_list[2].name);
 //   return changeToUpper;
 // };
 
-const updateNameMax = (name) => {
-  // console.log(name);
-  return name + " ma " + name.length + " znaków";
-};
 
 const updateNameApocryphen = (name) => {
   //console.log(name);
@@ -78,7 +75,7 @@ function App() {
 
         <div>
           {name_list.map((item) => (
-            <div>{updateNameMax(item.name)}</div>
+            <div><NameLength name = {item.name} /></div>
           ))}
         </div>
         <div>

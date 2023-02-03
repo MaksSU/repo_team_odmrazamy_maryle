@@ -1,3 +1,7 @@
+import styled from "styled-components";
 export function Name({ name }) {
-  return <h1>{name}</h1>;
+  return <StyledWrapper>{name}</StyledWrapper>;
 }
+const StyledWrapper = styled("h1")(() => ({
+  fontFamily: "Oswald , sans-serif",
+}));

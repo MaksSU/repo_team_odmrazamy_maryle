@@ -17,7 +17,6 @@ import styled from "styled-components";
 */
 
 function App() {
-
   return (
     <>
       <StyledWrapper>
@@ -38,5 +37,4 @@ const StyledWrapper = styled("div")(() => ({
   justifyContent: "center",
   alignItems: "center",
   gap: "20px",
-
 }));

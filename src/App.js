@@ -7,6 +7,9 @@ import { Profile } from "./components/molecules/Profile";
 import { NameLength } from "./components/atoms/NameLength";
 import { users } from "./data/users";
 import styled from "styled-components";
+import { Button } from "./components/atoms/Button";
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 /* Plan działania
   - div na profil (jakiś prostokąt, ładnie ostylizować)
@@ -20,9 +23,9 @@ function App() {
   return (
     <>
       <StyledWrapper>
-        {users.map((item) => (
-          <Profile user={item} />
-        ))}
+        <Button img={<ArrowBackIosNewIcon />} />
+        <Profile user={users[2]} />
+        <Button img={<ArrowForwardIosIcon />} />
       </StyledWrapper>
     </>
   );
